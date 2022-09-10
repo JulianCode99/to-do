@@ -47,12 +47,12 @@ const Form = ({ tareas, setTareas, tarea, setTarea }) => {
 
     objetoTareas.id = tarea.id;
 
-    const tareasActualizadas = tareas.map(tareaState =>
+    const tareasActualizadas = tareas.map((tareaState) =>
       tareaState.id === tarea.id ? objetoTareas : tareaState
       );
      
-      setTareas(tareasActualizadas)
-      setTarea([])
+      setTareas(tareasActualizadas);
+      setTarea({});
 
     //console.log('Editando tarea')
     }else {

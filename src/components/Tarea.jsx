@@ -5,9 +5,9 @@ const Tarea = ({ tarea, setTarea, eliminarTarea }) => {
 
   const handleEliminar = () => {
     //consolole.log('Eliminando tarea', id )
-    const pregunta = confirm('Desea eliminar atarea ?' );
+    const respuesta = confirm('Desea eliminar esta tarea ?' );
     if(respuesta){
-      eliminarTarea(id);
+      eliminarTarea(id)
     }
   };
 
